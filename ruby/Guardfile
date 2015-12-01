@@ -1,0 +1,5 @@
+guard :rspec, cmd: 'rspec' do
+  # watch('parent-child.rb')
+  watch(%r|.+\.rb|) { "spec" }
+  # watch(%r|^spec/.+_spec\.rb$|)
+end
