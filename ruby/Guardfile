@@ -1,4 +1,4 @@
-guard :rspec, cmd: 'rspec' do
+guard :rspec, cmd: 'rspec --color --format doc' do
   # watch('parent-child.rb')
   watch(%r|.+\.rb|) { "spec" }
   # watch(%r|^spec/.+_spec\.rb$|)
