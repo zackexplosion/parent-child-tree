@@ -59,10 +59,12 @@ var result = parent_child(data);
 // expect the two variable will be the same
 expect(result).to.deep.equal(expect_result);
 ```
-
-
 ### Languages
 * [Ruby](https://github.com/zackexplosion/parent-child-tree/tree/master/ruby)
 * [Javascript](https://github.com/zackexplosion/parent-child-tree/tree/master/javascript)
 * PHP
+* GO
 
+### Why
+
+Just a practice, and learn to use TDD framework in many languages.
