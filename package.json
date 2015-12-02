@@ -1,0 +1,24 @@
+{
+  "name": "parent-child",
+  "version": "1.0.0",
+  "description": "* [ruby](https://github.com/zackexplosion/parent-child-tree/tree/master/ruby) * javascript * php",
+  "main": "node_modules/mocha/bin/mocha javascript/parent-child_spec.js",
+  "devDependencies": {
+    "prettyjson": "^1.1.3",
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4"
+  },
+  "scripts": {
+    "test": "node_modules/mocha/bin/mocha javascript/parent-child_spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zackexplosion/parent-child-tree.git"
+  },
+  "author": "Zackexplosion",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zackexplosion/parent-child-tree/issues"
+  },
+  "homepage": "https://github.com/zackexplosion/parent-child-tree#readme"
+}
