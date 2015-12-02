@@ -2,20 +2,19 @@
 A repo that collect Parent Child Tree implemention in many progarmming languages.
 
 #### Example in Javascript
+
 ```javascript
 function parent_child(tree){
   var tmp = {};
   var roots = [];
 
+  // create tmp hash
   for (var i in tree) {
     tmp[tree[i].id] = {
       'id': tree[i].id,
       'children': []
     };
   }
-
-  // console.log(tmp);
-
 
   for (var i in tree) {
     var current = tree[i];
@@ -32,6 +31,8 @@ function parent_child(tree){
   return roots;
 };
 
+
+// convert this
 var data = [
   {id: 1, parent: 0},
   {id: 2, parent: 0},
@@ -41,6 +42,8 @@ var data = [
   {id: 6, parent: 2},
 ];
 
+
+// to
 var expect_result = [
   {id:1, children:[
     {id:3 ,children:[]},
@@ -53,9 +56,8 @@ var expect_result = [
 ];
 
 var result = parent_child(data);
-// console.log(prettyjson.render(result));
+// expect the two variable will be the same
 expect(result).to.deep.equal(expect_result);
-
 ```
 
 
